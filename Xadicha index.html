@@ -1,0 +1,155 @@
+```css
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #F5F3E9;
+    color: #263D30;
+    padding: 40px 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    padding: 45px 20px;
+    margin-bottom: 45px;
+    background: #E5EBDD;
+    border: 2px solid #315C43;
+    border-radius: 12px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #21452F;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 16px;
+    color: #617968;
+    letter-spacing: 2px;
+}
+
+/* GENERATION TITLE */
+.generation-title {
+    font-size: 25px;
+    color: #21452F;
+    margin: 40px 0 25px;
+    letter-spacing: 2px;
+}
+
+/* FAMILY GROUP */
+.family-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/* PERSON CARD */
+.person-card {
+    background: #FFFDF7;
+    border: 1px solid #A5B89F;
+    border-left: 5px solid #315C43;
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    min-height: 100px;
+    box-shadow: 0 4px 12px rgba(34, 65, 45, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(34, 65, 45, 0.15);
+}
+
+.person-card h3 {
+    font-size: 17px;
+    color: #21452F;
+    margin-bottom: 9px;
+}
+
+.person-card p {
+    font-size: 14px;
+    color: #788779;
+}
+
+/* COUPLE */
+.couple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.couple-symbol {
+    color: #66866C;
+    font-size: 22px;
+}
+
+/* CHILDREN */
+.children {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 25px 10px;
+    margin-top: 15px;
+    border-top: 2px solid #A5B89F;
+}
+
+/* CONNECTING LINES */
+.connector {
+    width: 2px;
+    height: 35px;
+    background: #66866C;
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    color: #617968;
+    border-top: 1px solid #A5B89F;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .person-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .generation-title {
+        font-size: 21px;
+    }
+}
+```
